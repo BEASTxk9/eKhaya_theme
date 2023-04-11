@@ -20,15 +20,37 @@
 #page{
     min-height: 92vh;
 }
+
+/* page headings */
+.page-context-header{
+  margin-top: -4vh;
+}
+.edw-stats-wrapper{
+  margin-top: -3vh;
+}
+
 /* dashboard bubble section displaying active, completed, due and enrolled courses(shane) */
 /* .edw-stats-wrapper{
   display:none;
   } */
 /* my courses overview (shane)*/
 .block_myoverview .paged-content-page-container {
-  max-height: 75vh;
+max-height: 50vh;
   overflow-y: scroll;
   }
+  /*Reduces the size of the images on courses (Tristan)*/
+.dashboard-card .edw-course-img-wrapper.dashboard-card-img{
+height: 150px;
+}
+
+/*Reduces the size of the images on courses (Tristan)*/
+.dashboard-card .edw-course-img-wrapper.dashboard-card-img{
+height: 150px;
+}
+/*Removes the alert for license activation (Tristan)*/
+.alert.text-center.license-notice.alert-dismissible.site-announcement.mb-0.alert-danger {
+    display: none;
+}
 
 /* ____________________ */
 /* __FOOTER__ (shane)*/
@@ -41,6 +63,11 @@
     button:active {
         outline: none;
     }
+
+
+
+
+
 
 /*___LOADER CSS__ (shane)*/
 
