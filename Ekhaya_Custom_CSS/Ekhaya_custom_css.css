@@ -1,3 +1,8 @@
+* {
+ outline-color: transparent !important;
+}
+
+
 /* __HEADER__ (shane)*/
 
 /* This will remove dropdown icon from the profile img btn (shane)*/
@@ -20,7 +25,6 @@
 #page{
     min-height: 92vh;
 }
-
 /* page headings (shane)*/
 .page-context-header{
   margin-top: -4vh;
@@ -28,7 +32,6 @@
 .edw-stats-wrapper{
   margin-top: -3vh;
 }
-
 /* dashboard bubble section displaying active, completed, due and enrolled courses(shane) */
 /* .edw-stats-wrapper{
   display:none;
@@ -38,11 +41,12 @@
 max-height: 50vh;
   overflow-y: scroll;
   }
+
+
   /*Reduces the size of the images on courses (Tristan)*/
 .dashboard-card .edw-course-img-wrapper.dashboard-card-img{
 height: 150px;
 }
-
 /*Reduces the size of the images on courses (Tristan)*/
 .dashboard-card .edw-course-img-wrapper.dashboard-card-img{
 height: 150px;
@@ -52,12 +56,12 @@ height: 150px;
     display: none;
 }
 
+
 /* rounded corners on timelineblock(Joshua)  */
 .block-region:not([data-blockregion="side-pre"]) .block .edw-block-body {
    border-radius:10px !important;
  box-shadow:none !important;
 }
-
 /* remove your site is not registered error(Joshua)  */
 .alert-danger,.environmenttable .error {
     color: #721c24;
@@ -65,21 +69,28 @@ height: 150px;
     border-color: #f5c6cb;
     display:none;
 }
-
 /* center logo on login screen(Joshua)  */
 .navbar-brand-logo {
     margin-left: auto !important;
   margin-right: auto!important;
 }
-
 /* remove dashboard text from dashboard(Joshua)  */
 #page-header .dashboard-bar-wrapper .page-header-headings .header-heading {
     display:none;
 }
-
 /* reduce extra space on dashboard(Joshua)  */
 #page.drawers {
     margin-top: 15px;
+}
+/*rounded corners course menu(Joshua)  */
+.courseindex .courseindex-section{
+  border:none !important;
+  }
+
+
+/* course info(shane) */
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-details .coursedetails .details .activities-title{
+  display: none;
 }
 
 /* ____________________ */
@@ -98,16 +109,18 @@ height: 150px;
         outline: none;
     }
 
+    /* read more btn(shane) */
+    a#readmorebtn {
+      display: none;
+  }
 
+  /* ____________________ */
+/* __NAV__ (shane)*/
 
-
-
-/*rounded corners course menu(Joshua)  */
-.courseindex .courseindex-section{
-border:none !important;
+/* course drop down content from toggle btn(shane) */
+.nav-tabs .dropdown-menu {
+  border-radius: 10px;
 }
-
-
 
 
 /*___LOADER CSS__ (shane)*/
