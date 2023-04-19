@@ -52,9 +52,43 @@ height: 150px;
     display: none;
 }
 
+/* rounded corners on timelineblock(Joshua)  */
+.block-region:not([data-blockregion="side-pre"]) .block .edw-block-body {
+   border-radius:10px !important;
+ box-shadow:none !important;
+}
+
+/* remove your site is not registered error(Joshua)  */
+.alert-danger,.environmenttable .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    display:none;
+}
+
+/* center logo on login screen(Joshua)  */
+.navbar-brand-logo {
+    margin-left: auto !important;
+  margin-right: auto!important;
+}
+
+/* remove dashboard text from dashboard(Joshua)  */
+#page-header .dashboard-bar-wrapper .page-header-headings .header-heading {
+    display:none;
+}
+
+/* reduce extra space on dashboard(Joshua)  */
+#page.drawers {
+    margin-top: 15px;
+}
+
 /* ____________________ */
 /* __FOOTER__ (shane)*/
 
+/* remove Hr line from footer(Joshua)  */
+#page-footer .footer-container hr {
+    display: none!Important;
+}
 
 /* ____________________ */
 /*___BUTTONS__ (shane)*/
@@ -65,6 +99,13 @@ height: 150px;
     }
 
 
+
+
+
+/*rounded corners course menu(Joshua)  */
+.courseindex .courseindex-section{
+border:none !important;
+}
 
 
 
