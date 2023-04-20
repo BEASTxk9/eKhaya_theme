@@ -1,8 +1,3 @@
-* {
- outline-color: transparent !important;
-}
-
-
 /* __HEADER__ (shane)*/
 
 /* This will remove dropdown icon from the profile img btn (shane)*/
@@ -86,11 +81,23 @@ height: 150px;
 .courseindex .courseindex-section{
   border:none !important;
   }
+/* Removed summary text (Joshua) */
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-details .coursedetails .details .section-activities-summary {
+display:none;
+}
+/* Removed course category (2023) (Joshua) */
+body#page-course-view-remuiformat header.hasbackground.design-1 .header-main-section .category .badge {
+display:none;
+}
 
 
 /* course info(shane) */
 body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-details .coursedetails .details .activities-title{
   display: none;
+}
+/* course drop down(shane) */
+body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-remuiformat .contentafterlink{
+  max-height: none !important;
 }
 
 /* ____________________ */
