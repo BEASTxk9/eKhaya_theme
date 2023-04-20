@@ -99,6 +99,15 @@ body#page-course-view-remuiformat .course-content .sections #section-0 .general-
 body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-remuiformat .contentafterlink{
   max-height: none !important;
 }
+/* remove view layout of cards(shane) */
+.block-myoverview [data-region="filter"] .all-filter-wrapper .nav-display-selector-wrapper .nav-display-selector .nav {
+  display: none;
+}
+/* remove search bar (shane) */
+.block-myoverview [data-region="filter"] .all-filter-wrapper .nav-search-sort-selector .edw-search-form-wrapper .input-group-prepend {
+  display: none !important;
+}
+
 
 /* ____________________ */
 /* __FOOTER__ (shane)*/
