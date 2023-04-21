@@ -130,6 +130,13 @@ body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-rem
       display: none;
   }
 
+  /* login (shane) */
+  .main-area-bg.pagelayout-login .login-container .logo-area {
+    background: transparent;
+}
+
+
+
   /* ____________________ */
 /* __NAV__ (shane)*/
 
