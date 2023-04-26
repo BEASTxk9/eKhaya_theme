@@ -132,6 +132,11 @@ body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-rem
 
 /* __LOGIN__ (shane)*/
 
+/* bg img (shane)*/
+.pagelayout-login #page {
+  background-position: bottom !important;
+}
+
   .main-area-bg.pagelayout-login .login-container .logo-area {
     background: transparent;
     background-color: rgba(255, 255, 255, 0.378);
@@ -139,6 +144,7 @@ body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-rem
 /* remove scroll (shane) */
 .pagelayout-login #page div[role="main"] {
   max-height: fit-content !important;
+  height: fit-content !important;
 }
 .main-area-bg.pagelayout-login .login-container {
   padding-bottom: 0px !important;
@@ -151,43 +157,29 @@ body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-rem
 @media only screen and (max-width: 767.5px){
   .main-area-bg.pagelayout-login .login-container {
     padding-bottom: 0px !important;
-    padding-top: 0vh !important;
+    padding-top: -3vh !important;
     overflow: hidden !important;
   }
 }
-/* .pagelayout-login #page div[role="main"] {
-  padding: 0;
-  margin-bottom: -30vh;
-}
-.disclaimer{
-  color: #800000;
-} */
-/* __LOGIN__ (shane)*/
-.disclaimer {
-  color: #800000;
-position: fixed;
-right: 0;
-padding-right: 3.5vw;
-justify-content: center;
-text-align: center;
-margin-top: -2vh;
-}
-@media (max-width: 767.98px){
-  .pagelayout-login .login-description-container {
-    display: contents !important;
-}
-.disclaimer {
-  color: #800000;
-position: fixed;
-top: 0;
-right: 0;
-left: 0;
-padding: 0;
-justify-content: center;
-text-align: center;
-}
+/* forget password(shane) */
+.small-info-regular, .filemanager~p, .filemanager~p+.form-filetypes-descriptions, .filemanager .fp-info .fp-fileinfo div, #page-header #page-navbar nav ol.breadcrumb .breadcrumb-item, .message-app .view-conversation .content-message-container [data-region="day-messages-container"] .send [data-region="text-container"] p, .message-app .view-conversation .content-message-container [data-region="day-messages-container"] .received [data-region="text-container"] p, .small-info-semibold, .popover-region .content-item-container.notification .content-item-footer, .filemanager~p+.form-filetypes-descriptions small, #block-region-side-pre .block-content-area .table-wrapper .calendartable.calendarmonth th span.h-semibold-5, .edw-msg-panel-badge {
+  font-size: .75rem;
+  display: none;
 }
 
+/* disclaimer (shane) */
+.disclaimer {
+  color: #800000 !important;
+}
+h3.disclaimer-heading.justify-content-center.text-center.pt-1 {
+  color: #800000 !important;
+}
+.main-area-bg.pagelayout-login .login-container {
+  overflow-y: hidden;
+}
+.login-welcome-wrapper.d-flex.flex-column.flex-gap-1.text-center {
+   padding-top: 20px; 
+}
 
 
 /* loader (shane) */
@@ -213,6 +205,27 @@ body#page-theme-remui-customizer #customizer .customizer-overlay img {
 .nav-tabs .dropdown-menu {
   border-radius: 10px;
 }
+
+/* hide from nav mobile view (shane)*/
+@media only screen and (max-width: 1023.5px){
+  /* categories */
+    a#drop-down-catselector-menu {
+      display: none !important;
+    }
+  /* home */
+  a.list-group-item.list-group-item-action[href^="https://moodle.cloudza.tech/?redirect=0"] {
+    display: none !important;
+ }
+  /* my courses */
+  a.list-group-item.list-group-item-action[href^="https://moodle.cloudza.tech/my/courses.php"] {
+    display: none !important;
+ }
+  /* recent */
+  a#drop-down- {
+    display: none !important;
+  }
+}
+
 
 
 /*___LOADER CSS__ (shane)*/
