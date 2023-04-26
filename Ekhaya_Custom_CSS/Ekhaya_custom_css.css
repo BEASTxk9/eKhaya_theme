@@ -130,10 +130,79 @@ body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-rem
       display: none;
   }
 
-  /* login (shane) */
+/* __LOGIN__ (shane)*/
+
   .main-area-bg.pagelayout-login .login-container .logo-area {
     background: transparent;
+    background-color: rgba(255, 255, 255, 0.378);
 }
+/* remove scroll (shane) */
+.pagelayout-login #page div[role="main"] {
+  max-height: fit-content !important;
+}
+.main-area-bg.pagelayout-login .login-container {
+  padding-bottom: 0px !important;
+  padding-top: 20vh !important;
+  overflow: hidden !important;
+}
+.login-wrapper {
+  overflow: hidden;
+}
+@media only screen and (max-width: 767.5px){
+  .main-area-bg.pagelayout-login .login-container {
+    padding-bottom: 0px !important;
+    padding-top: 0vh !important;
+    overflow: hidden !important;
+  }
+}
+/* .pagelayout-login #page div[role="main"] {
+  padding: 0;
+  margin-bottom: -30vh;
+}
+.disclaimer{
+  color: #800000;
+} */
+/* __LOGIN__ (shane)*/
+.disclaimer {
+  color: #800000;
+position: fixed;
+right: 0;
+padding-right: 3.5vw;
+justify-content: center;
+text-align: center;
+margin-top: -2vh;
+}
+@media (max-width: 767.98px){
+  .pagelayout-login .login-description-container {
+    display: contents !important;
+}
+.disclaimer {
+  color: #800000;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+padding: 0;
+justify-content: center;
+text-align: center;
+}
+}
+
+
+
+/* loader (shane) */
+body#page-theme-remui-customizer #customizer .customizer-overlay img{
+ content: url("https://i.postimg.cc/W4Mt2P03/1-Cs-J05-WEGfun-YMLGfs-T2s-XA.gif") !important; 
+ height: 100vh;
+ width: 100vh;
+}
+
+/* loader (shane) */
+body#page-theme-remui-customizer #customizer .customizer-overlay img {
+  content: none !important;
+  background-image: url("https://i.postimg.cc/W4Mt2P03/1-Cs-J05-WEGfun-YMLGfs-T2s-XA.gif") !important;
+}
+
 
 
 
@@ -147,7 +216,6 @@ body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-rem
 
 
 /*___LOADER CSS__ (shane)*/
-
     @-webkit-keyframes follow-the-leader {
         0% {
           -webkit-transform: rotate(0deg) translateY(-200%);
