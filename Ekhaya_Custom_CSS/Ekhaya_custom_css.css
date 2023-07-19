@@ -227,7 +227,10 @@ body#page-theme-remui-customizer #customizer .customizer-overlay img {
 }
 
 
-
+/* hide default loader(shane) */
+.defualt_loader{
+  display: none;
+}
 /*___LOADER CSS__ (shane)*/
     @-webkit-keyframes follow-the-leader {
         0% {

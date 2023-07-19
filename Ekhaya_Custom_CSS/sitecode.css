@@ -1,0 +1,717 @@
+/* __LOGIN__ */
+/*Temp code (Tristan)*/
+.login-welcome-wrapper.d-flex.flex-column.flex-gap-1.text-center {
+    padding-top: 100px;
+}
+/* Increases size of logo (Tristan)*/
+.pagelayout-login .logo-area .logo, .pagelayout-login .logo-area .logomini{
+height: 100px;
+}
+/* center logo on login screen(Joshua)  */
+.navbar-brand-logo {
+    margin-left: auto !important;
+  margin-right: auto!important;
+}
+/* login (shane) */
+.main-area-bg.pagelayout-login .login-container .logo-area {
+    background: transparent;
+}
+/* remove scroll (shane) */
+.pagelayout-login #page div[role="main"] {
+  max-height: fit-content !important;
+height: fit-content !important;
+}
+/* forget password old (shane)*/
+a[href^="https://moodle.cloudza.tech/login/forgot_password.php"]{
+display: none;
+}
+/* forgot password forum(shane) */
+.pagelayout-login .loginform .login-form-forgotpassword a{
+font-weight: bold;
+}
+
+/* disclaimer (shane) */
+.disclaimer {
+  color: #800000 !important;
+}
+h3.disclaimer-heading.justify-content-center.text-center.pt-1 {
+  color: #800000 !important;
+}
+.main-area-bg.pagelayout-login .login-container {
+  overflow-y: hidden;
+}
+.login-welcome-wrapper.d-flex.flex-column.flex-gap-1.text-center {
+   padding-top: 20px; 
+}
+/* bg img shane */
+.pagelayout-login #page {
+  background-position: bottom !important;
+}
+/*remove question button from login page (Joshua) */
+.pagelayout-login #page-footer .footer-container.container {
+    display: none!important;
+}
+/* login page height (shane) */
+@media (max-width: 576px){
+  #page-wrapper #page {
+    min-height: 100vh;
+}
+.login-wrapper {
+  min-height: 100vh;
+}
+}
+
+
+/* ____________________ */
+/* __HEADER/NAVBAR__ */
+
+/*Increases size of logo on navbar (Tristan)*/
+.navbar-brand.logo, .navbar-brand .navbar-brand-logo{
+height:120px;
+}
+.navbar {
+box-shadow: none;
+}
+
+/*Rounds the outline of the navbar links (Tristan)*/
+.navbar .primary-navigation .nav-link {
+  border-radius: 5px;
+}
+
+/* This will remove dropdown icon from the profile img btn (shane)*/
+.dropdown-toggle::after{
+    display: none;
+}
+/* This will remove the user role from the profile img btn (shane)*/
+.userloggedinas .usermenu .usertext, .userswitchedrole .usermenu .usertext, .loginfailures .usermenu .usertext{
+    display: none !important;
+}
+/* This will fix the change in color error that occurs when you close the popup using the x button (shane)*/
+.edw-icon-Comment-03:before {
+    color: #3b3b3b !important;
+}
+/*Fix issue with border break in nav menu (Joshua) */
+.dropdown-item:last-child {
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.dropdown-item:first-child {
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+.edw-tabs-navigation .nav-tabs .nav-item .nav-link {
+    border-radius: 8px;
+}
+/*Nav menu font-weight (Joshua) */
+.edw-tabs-navigation .nav-tabs .nav-item .nav-link {
+    font-weight: 600;
+}
+
+/* hide from nav mobile view (shane)*/
+@media only screen and (max-width: 1023.5px){
+  /* categories */
+    a#drop-down-catselector-menu {
+      display: none !important;
+    }
+  /* home */
+  a.list-group-item.list-group-item-action[href^="https://moodle.cloudza.tech/?redirect=0"] {
+    display: none !important;
+ }
+  /* my courses */
+  a.list-group-item.list-group-item-action[href^="https://moodle.cloudza.tech/my/courses.php"] {
+    display: none !important;
+ }
+  /* recent */
+  a#drop-down- {
+    display: none !important;
+  }
+}
+
+
+/* ____________________ */
+/* __MAIN/COURSES__ */
+/* set min-height to content (shane) */
+#page{
+    min-height: 92vh;
+}
+
+/*Reduces size of announcements (Tristan)*/
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .activities-wrapper .general-section-activities .activity {
+min-height: 150px!important;
+}
+
+/*Makes images responsive (Tristan)*/
+.mw-100{
+object-fit: contain!important;
+}
+
+/*Reduces padding and makes the grade report table responsive (Tristan)*/
+.path-grade-report-grader .gradeparent .cell {
+    padding: 12px!important;
+}
+
+/*Removes secondary colour in the grade report table (Tristan)*/
+.path-grade-report-grader .gradeparent .userrow.odd .cell, .path-grade-report-grader .gradeparent .floater .cell.odd, .path-grade-report-grader .gradeparent .heading .cell, .path-grade-report-grader .gradeparent .cell.category, .path-grade-report-grader .gradeparent .avg .cell {
+    background-color: #ffff!important;
+}
+
+/*Adds text wrap to the grade report table (Tristan)*/
+.path-grade-report-grader .gradeparent .cell {
+    white-space: normal!important;
+}
+
+/*Fixes letters being cutoff in the grade report table (Tristan)*/
+.path-grade-report-grader .gradeparent .userrow.odd .cell, .path-grade-report-grader .gradeparent .floater .cell.odd, .path-grade-report-grader .gradeparent .heading .cell, .path-grade-report-grader .gradeparent .cell.category, .path-grade-report-grader .gradeparent .avg .cell {
+    line-height: 20px!important;
+}
+
+/*Adds padding left to course heading, removes the secondary colour and makes the text bold in the user report table (Tristan)*/
+.path-grade-report-user .user-grade.generaltable .levelodd {
+    background-color: white!important;
+    font-weight: bold!important;
+}
+
+/*Adds border to the user report table (Tristan)*/
+table.boxaligncenter.generaltable.user-grade {
+    border: 1px solid #ca9494;
+}
+
+/*Removes grey area in accordion (Tristan)*/
+.accordion>.card>.card-header{
+background-color: white;
+}
+/*Removes extra border in sessions (Tristan)*/
+body#page-course-view-remuiformat .activity .activity-item:not(.activityinline){
+border-color: white;
+}
+/*Reduces the size of the file icons (Tristan)*/
+body#page-course-view-remuiformat .activityiconcontainer{
+height: 40px!important;
+width: 40px!important;
+}
+/*Reduces the font size of file type (Tristan)*/
+body#page-course-view-remuiformat .activity .activitytitle .media-body>:first-child{
+font-size: 12px;
+}
+/*Reduces the font size of the file titles (Tristan)*/
+span.instancename{
+font-size: 15px;
+}
+/*Reduces line height of file title (Tristan)*/
+body#page-course-view-remuiformat .activity .activitytitle .media-body>:first-child{
+line-height: 12px;
+}
+/* Rounds the borders in course menu (Tristan)*/
+#theme_remui-drawers-courseindex .drawercontent #courseindex #courseindex-content .courseindex .courseindex-section .courseindex-section-title{
+border-radius: 5px;
+}
+/* Adds padding to the top of the welcome message (Tristan)*/
+h3.welcome-note{
+padding-top: 40px;
+}
+/*Removes Welcome in course (Tristan)*/
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-details .generaldetails {
+    display: none!important;
+}
+/*Reduces size of font of session titles in courses (Tristan)*/
+body#page-course-view-remuiformat .remui-format-list .sections .section .content .panel-title, body#page-course-view-remuiformat .remui-format-list .sections .section .content h3 a{
+font-size:20px;
+}
+/*Removes the Activities heading (Tristan)*/
+h4.activitieshead.m-0 {
+    display: none;
+}
+/*Adds gradient to the activity items (Tristan)*/
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .activities-wrapper .general-section-activities .activity:not(.modtype_label) {
+    transition: transform .3s;
+    border:none;
+    background: linear-gradient(to right, #ffff, #D3D3D3);
+}
+
+/*Adds hover effect to the activity items (Tristan)*/
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .activities-wrapper .general-section-activities .activity:not(.modtype_label):hover{
+transform: scale(1.05);
+}
+/*Removes text transform - module intro page(Joshua)*/
+body#page-course-view-remuiformat .activity .activitytitle .media-body .activityname a {
+    text-decoration: none !important;
+}
+ /* remove search bar (shane) */
+ .block-myoverview [data-region="filter"] .all-filter-wrapper .nav-search-sort-selector .edw-search-form-wrapper .input-group-prepend {
+    display: none !important;
+  }
+/* Padding between resouces(Joshua) */
+body#page-course-view-remuiformat .activity .activity-item:not(.activityinline) {
+    padding: 20px;
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+/*Remove space in-between bullet(Joshua) */
+    body#page-course-view-remuiformat .remui-format-list .activities-list ul.section li:not(:last-child), body#page-course-view-remuiformat .remui-format-list .card-footer ul.section li:not(:last-child) {
+        margin-bottom: 1px;
+    }
+    /*Fix resource moving (top)(Joshua) */
+    body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .activities-wrapper .general-section-activities .activity .editing_move {
+        left: -2vh !important;
+        top: -2vh !important;
+    }
+    /* change warning colors (hidden from students)(Joshua) */
+    .badge-warning {
+        background-color: #ffffff!important;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: thin;
+    }
+    /*Add gradient to sections (Joshua) */
+    body#page-course-view-remuiformat .remui-format-list .sections .section .content .course-section-summary-wrapper {
+        background: linear-gradient(to right,#ffff,#D3D3D3);
+         border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius:10px;
+    }
+
+    /*Remove unused space underneath session heading (Joshua) */
+    body#page-course-view-remuiformat .remui-format-list .section_availability.course-description-item {
+        display: none;
+    }
+    /*Remove unnessary space on ssssions(Joshua) */
+    body#page-course-view-remuiformat .remui-format-list.all-section-format ul.sections li.section .content ul.section {
+        border-top: none !important;
+    }
+    /* rounded corners on timelineblock(Joshua)  */
+    .block-region:not([data-blockregion="side-pre"]) .block .edw-block-body {
+        border-radius:10px !important;
+      box-shadow:none !important;
+     }
+     /* remove dashboard text from dashboard(Joshua)  */
+     #page-header .dashboard-bar-wrapper .page-header-headings .header-heading {
+         display:none;
+     }
+     /* reduce extra space on dashboard(Joshua)  */
+     #page.drawers {
+         margin-top: 60px;
+     }
+     /*rounded corners course menu(Joshua)  */
+     .courseindex .courseindex-section{
+     border:none !important;
+     }
+     /* course info(shane) */
+     body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-details .coursedetails .details .activities-title{
+       display: none;
+     }
+     /* read more btn(shane) */
+     a#readmorebtn {
+           display: none;
+     }
+      /* Removed summary text (Joshua) */
+ body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-details .coursedetails .details .section-activities-summary {
+    display:none;
+    }
+    /* Removed course category (2023) (Joshua) */
+    body#page-course-view-remuiformat header.hasbackground.design-1 .header-main-section .category .badge {
+    display:none;
+    }
+    /* fix break in course block right and left bottom corners (Joshua) */
+    body#page-course-view-remuiformat .remui-format-list .sections .section:not(#section-0){
+        border-bottom-left-radius: 10px !Important;
+        border-bottom-right-radius: 10px !Important;
+        border-top-right-radius: 10px !Important;
+        border-top-left-radius: 10px !Important;
+    }
+    /* reduce padding inbetween resources  (Joshua) */
+    body#page-course-view-remuiformat .remui-format-list .sections .section .content .course-section-summary-wrapper{
+        padding: 8px !important;
+    }
+
+    /* Remove bgcolor on course menu   (Joshua) */
+    #theme_remui-drawers-courseindex .drawercontent #courseindex #courseindex-content .courseindex .courseindex-section .courseindex-section-title {
+        background-color: rgb(251 251 251 / 10%);
+    }
+
+    /* Fix border issue on questionbox pop-up (Joshua) */
+    .popover.footer .popover-body .footer-section {
+        background: none;
+    }
+
+    /* remove box shadow around calendar when scrolling (Joshua) */
+    .drawer.scrolled .drawerheader {
+        box-shadow: none;
+    }
+
+    /*Text overflow on course menu (Joshua) */
+    .text-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+    /*Remove duplicate session details (Joshua) */
+    #theme_remui-drawers-courseindex .drawercontent #courseindex #courseindex-content .courseindex .courseindex-section .courseindex-item-content .courseindex-sectioncontent .courseindex-item {
+        display: none;
+    }
+    /*Fix border issue with messages (Joshua) */
+    .popover-region-footer-container {
+        border-bottom-left-radius: 10px !Important;
+        border-bottom-right-radius: 10px !Important;
+    }
+    /*Remove activity name (Joshua) */
+    body#page-course-view-remuiformat .activity .activitytitle .media-body>:first-child {
+        display: none;
+    }
+    /*Font weight increase on additional menu (Joshua) */
+    .text-link-regular, .dropdown-item, .fp-repo-items-container .fp-filename, .fp-repo-items-container .fp-content .form-control, .fp-pathbar .fp-path-folder-name, .filemanager .form-control, .moodle-dialogue-bd ul.dragdrop-keyboard-drag li, .pagelayout-login#page-login-forgot_password .mform #fitem_id_username2 .form-control-static, .message-app .conversationcontainer .panel-body-container .view-overview-body .tab-body-container .nav-item, .message-app .body-container .view-overview-body .tab-body-container .nav-item, #course-archive-main-container .filters-wrapper .bootstrap-select.btn-group .dropdown-menu li a {
+        font-weight: 600;
+    }
+
+/* remove dropshadow on grader report (Joshua)*/
+.main-area-bg:not(.pagelayout-login) div[role="main"] {
+  filter: none;
+}
+
+.custom-select {
+    padding: 0.6em 1.625rem 0.90625rem 0.625rem;
+    line-height: 1.2;
+}
+
+.gradereport-grader-table .gradeitemheader {
+    line-height: 15px;
+}
+
+
+
+/* ____________________ */
+/* __DROPDOWN__ */
+/*More menu color and visual (Joshua) */
+.dropdownmoremenu .dropdown-toggle.nav-link span {
+    font-size: 30px;
+border-radius: 10px;
+    background-color: #C5C5C5;
+}
+.dropdown-menu {
+    border: 1px solid #dfdfdf;
+    filter: none !important;
+}
+/* course drop down content from toggle btn(shane) */
+.nav-tabs .dropdown-menu {
+    border-radius: 10px;
+}
+/* course drop down(shane) */
+body#page-course-view-remuiformat .contentwithoutlink, body#page-course-view-remuiformat .contentafterlink{
+    max-height: none !important;
+}
+
+/* course drop down(shane) */
+.drawer {
+    filter: none;
+}
+
+/* course drop down(shane) */
+#block-region-side-pre .block {
+    border-bottom: 1px solid #ffffff !important;
+}
+
+/* ____________________ */
+/* __BANNER__ */
+/*Gives banner image a rounded border (Tristan)*/
+img.banner\.image {
+    border-radius: 5px;
+}
+/*Removes banner (Tristan)*/
+.edw-stats-wrapper{
+display: none;
+}
+/*Remove space on dashboard above header img(Joshua) */
+#page.drawers .main-inner{
+     margin-top: 1rem; 
+}
+
+/* ____________________ */
+/* __CARDS__ */
+/*Reduces the size of the images on courses (Tristan)*/
+.dashboard-card .edw-course-img-wrapper.dashboard-card-img{
+height: 150px;
+}
+/*Adds hover effect to courses first part (Tristan)*/
+.card.dashboard-card.edwanimate- {
+transition: transform .3s;
+}
+/*Adds hover effect to courses last part (Tristan)*/
+.card.dashboard-card.edwanimate-:hover {
+transform: scale(1.05);
+}
+
+/* Remove Dashboard filter (Joshua) */
+.dashboard-card {
+    filter: none !important;
+}
+
+/* Add hover effect Orientation(Joshua) */
+#inst9897 #features > .col-sm-4.col-md-3  {
+transition: transform .9s;
+}
+
+#inst9897 #features > .col-sm-4.col-md-3 :hover {
+transform: scale(1.05);
+}
+
+
+/* remove view layout of cards(shane) */
+.block-myoverview [data-region="filter"] .all-filter-wrapper .nav-display-selector-wrapper .nav-display-selector .nav {
+   display: none;
+}
+
+/* user report*/
+/*grades */
+
+table.dataTable tbody td, table.dataTable tbody th, table.generaltable tbody td, table.generaltable tbody th {
+    border-bottom: 1px solid #ca9494;
+}
+
+table.dataTable tbody td:last-child, table.dataTable tbody th:last-child, table.generaltable tbody td:last-child, table.generaltable tbody th:last-child {
+    border-right: 1px solid #ca9494;
+}
+
+table.dataTable thead tr th, table.generaltable thead tr th {
+    border-right: 1px solid #ca9494 !important;
+ border-left: 1px solid #ca9494 !important;
+}
+
+.path-grade-report-user .user-grade thead th {
+    border-left: 1px solid;
+}
+
+.path-grade-report-user .user-grade tbody .column-itemname {
+    border-left: 1px solid;
+    padding-left:24px;
+}
+
+/*Align grade items middle (Joshua)*/
+.path-grade-report-user .user-grade thead th {
+    vertical-align: middle;
+    text-align:center;
+}
+
+/*Align text on gradebook setup (Joshua)*/
+.path-grade-edit-tree .setup-grades h4 {
+    margin-left: 24px;
+}
+
+/*Remove lecturer instructor name from module header(Joshua)*/
+#page-header.hasbackground.design-1 .header-sub-section .instructor-info .titles {
+    display: none !important;
+}
+
+/* __ICON__ */
+
+
+/* all icons */
+body#page-course-view-remuiformat div#card-editing-container #section-0 li.activity img.activityicon {
+  height: 8vh !important;
+  width: 8vh !important;
+}
+
+/* forum (shane) */
+.activityiconcontainer.collaboration .activityicon, .activityiconcontainer.collaboration .icon {
+  filter: none !important;
+}
+.activityiconcontainer.collaboration {
+  background-color: transparent !important;
+}
+
+/* feedback(shane) */
+.activityiconcontainer.communication .activityicon, .activityiconcontainer.communication .icon {
+  filter: none !important;
+}
+.activityiconcontainer.communication {
+  background-color: transparent !important;
+}
+
+/* file(shane) */
+.activityiconcontainer.content .activityicon, .activityiconcontainer.content .icon {
+  filter: none !important;
+}
+.activityiconcontainer.content {
+  background-color: transparent !important;
+}
+
+/* quiz(shane) */
+.activityiconcontainer.assessment .activityicon, .activityiconcontainer.assessment .icon {
+  filter: none !important;
+}
+.activityiconcontainer.assessment {
+  background-color: transparent;
+}
+
+/* add activity icons(shane) */
+.activityiconcontainer .activityicon, .activityiconcontainer .icon {
+  height: 8vh;
+  width: 8vh;
+margin-bottom: 2vh !important;
+padding-top: 1rem;
+}
+
+.clamp-2 {
+    margin-top: 1rem;
+}
+
+
+
+/* ____________________ */
+/* __FOOTER__ */
+/*Centres the footer (Tristan)*/
+.contentsocial.social-links {
+    display: flex;
+    justify-content: center;
+}
+/* remove Hr line from footer(Joshua)  */
+#page-footer .footer-container hr {
+    display: none!Important;
+}
+/*remove help,service,contact support - (functions not working yet)(Joshua) */
+.popover.footer .popover-body .footer-section:first-child {
+    display: none !important;
+}
+/*remove text deco on pop-up footer question (Joshua) */
+.popover.footer .popover-body .footer-section a {
+    text-decoration: none;
+}
+/*remove footer pop-up sections-Functions not working (Joshua) */
+.popover.footer .popover-body .footer-section:not(:last-child) {
+    border-bottom: transparent !important;
+}
+/*remove footer pop-up sections-Functions not working (Joshua) */
+.popover.footer .popover-body .footer-section:last-child {
+display:none !important;
+}
+
+
+/* ____________________ */
+/*___BUTTONS__ */
+/* right offcanvas btn(shane)  */
+.drawer-toggles .drawer-toggler {
+  position: fixed;
+  top: calc(80px + 0.7rem) !important;
+  z-index: 2;
+}
+/* Fix drag/move for resources(Joshua) */
+.editing .section .activity .editing_move {
+    top: 2vh !important;
+    left: -1vh !important;
+}
+
+
+/* ____________________ */
+/* __IMAGES__ */
+/*border-radius for all img tags (Joshua) */
+.img-fluid {
+    border-radius: 10px !important;
+}
+
+
+/* ____________________ */
+/* __LOADER__ */
+/* loader (shane) */
+body#page-theme-remui-customizer #customizer .customizer-overlay img{
+ content: url("https://i.postimg.cc/W4Mt2P03/1-Cs-J05-WEGfun-YMLGfs-T2s-XA.gif") !important; 
+ display: none;
+}
+
+/* hide default loader(shane) */
+.defualt_loader{
+    display: none;
+  }
+  /*___CUSTOME LOADER__ (shane)*/
+      @-webkit-keyframes follow-the-leader {
+          0% {
+            -webkit-transform: rotate(0deg) translateY(-200%);
+            transform: rotate(0deg) translateY(-200%);
+          }
+          60%,
+          100% {
+            -webkit-transform: rotate(360deg) translateY(-200%);
+            transform: rotate(360deg) translateY(-200%);
+          }
+        }
+        @keyframes follow-the-leader {
+          0% {
+            -webkit-transform: rotate(0deg) translateY(-200%);
+            transform: rotate(0deg) translateY(-200%);
+          }
+        
+          60%,
+          100% {
+            -webkit-transform: rotate(360deg) translateY(-200%);
+            transform: rotate(360deg) translateY(-200%);
+          }
+        }   
+        .follow-the-leader-line {
+          height: 14px;
+          position: relative;
+          width: 14px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+        }
+        /* turns all divs into circles (shane)*/
+        .follow-the-leader-line div {
+          -webkit-animation: follow-the-leader 1.25s infinite backwards;
+          animation: follow-the-leader 1.25s infinite backwards;
+          background-color: black;
+          border-radius: 100%;
+          height: 100%;
+          width: 100%;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        } 
+        /* circle 1 (shane)*/
+        .follow-the-leader-line div:nth-child(1) {
+          -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+          background-color: #800000;
+        }
+           /* circle 2 (shane)*/
+        .follow-the-leader-line div:nth-child(2) {
+          -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+          background-color: #ac1919;
+        }
+           /* circle 3 (shane)*/
+        .follow-the-leader-line div:nth-child(3) {
+          -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+          
+          background-color: #af934d;
+        }
+           /* circle 4 (shane)*/
+        .follow-the-leader-line div:nth-child(4) {
+          -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+          background-color: #c9a23f;
+        }
+           /* circle 5 (shane)*/
+        .follow-the-leader-line div:nth-child(5) {
+          -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+          background-color: #c9923f;
+        }
+
+/* ____________________ */
+/* __LICENSE__ */
+/*Removes the alert for license activation (Tristan)*/
+.alert.text-center.license-notice.alert-dismissible.site-announcement.mb-0.alert-danger {
+    display: none;
+}
+
+
+/* ____________________ */
+/* __ALERT__ */
+/* remove your site is not registered error(Joshua)  */
+.alert-danger,.environmenttable .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    display:none;
+}
+/* website list */
+li {
+    margin-top: 1vh !important;
+}
